@@ -4,11 +4,13 @@ Simulate the Prime Emergence dynamical system
 Author: Hristo Valentinov Nedelchev
 """
 
+import sys
+sys.path.append('.')  # Add current directory to path
+
 import numpy as np
 from scipy.integrate import solve_ivp
 import matplotlib.pyplot as plt
 
-sys.path.append('.')  # Add current directory to path
 from prime_emergence import PrimeEmergenceTheorem
 
 class PrimeEmergenceSimulator:
