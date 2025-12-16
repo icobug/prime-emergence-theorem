@@ -5,6 +5,8 @@ Author: Hristo Valentinov Nedelchev
 """
 
 import sys
+import csv
+import numpy as np
 sys.path.append('.')  # Add current directory to path
 
 from prime_emergence import PrimeEmergenceTheorem
@@ -50,8 +52,6 @@ def compute_for_range(N_values):
 
 def save_to_csv(results, filename="prime_emergence_results.csv"):
     """Save results to CSV file"""
-    import csv
-    
     with open(filename, 'w', newline='') as f:
         writer = csv.writer(f)
         writer.writerow(['N', 'π(N)', 'μ_c(N)', 'k_c(N)', 'C(N)', 'G(N)', 'c(N)', 'Goldbach_Pairs'])
